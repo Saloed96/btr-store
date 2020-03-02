@@ -6,8 +6,11 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     /*color: #5a5a5a;*/
-    color: black;
+    /*color: black;*/
     background-color: #111111;
+    background-image: image("img/back/setka-big.png");
+    background-repeat: repeat;
+    background-size: auto;
 }
 
 .form-control {
