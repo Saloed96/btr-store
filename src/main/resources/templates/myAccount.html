@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="common/header :: common-header"></head>
+<body>
+
+<!--navbar-->
+<div th:replace="common/header :: navbar"></div>
+
+<div class="container" style="padding-top: 20px;">
+    <div class="row">
+        <div class="col-md-8" style="padding-top: 38px;">
+            <h2 class="section-headline" style="position:absolute; margin-top: 6px;"><span style="padding: 5px 22px;">User Account</span>
+            </h2>
+            <hr class="container-fluid" style="position: absolute; height: 6px; background-color: #333;
+             z-index: -1;"/>
+        </div>
+        <div class="col-md-4">
+            <img class="img-responsive img-fluid rounded-pill" src="/img/slide/bt985x290.gif" alt="BLACKTECH"/>
+        </div>
+    </div>
+<!--    <hr style="position: absolute; width: 100%; height: 6px; background-color: #333;-->
+<!--             z-index: -1;"/>-->
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-xs-9 col-xs-offset-3  container container-fluid">
+            <!--Nav tabs-->
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-new-account-tab" data-toggle="tab"
+                       href="#nav-new-account" role="tab" aria-controls="nav-new-account" aria-selected="true">Create
+                        new account</a>
+                    <a class="nav-item nav-link" id="nav-log-in-tab" data-toggle="tab" href="#nav-log-in" role="tab"
+                       aria-controls="nav-log-in" aria-selected="false">Log in</a>
+                    <a class="nav-item nav-link" id="nav-forget-pass-tab" data-toggle="tab" href="#nav-forget-pass"
+                       role="tab" aria-controls="nav-forget-pass" aria-selected="false">Forgot password</a>
+                </div>
+            </nav>
+            <!--tabs end-->
+            <!--tab content panels-->
+            <div class="tab-content bg-dark  container container-fluid" style="padding: 20px 20px;" id="nav-tabContent">
+
+                <div class="tab-pane fade show active" id="nav-new-account" role="tabpanel"
+                     aria-labelledby="nav-new-account-tab">
+                    <form>
+                        <div class="form-group bg-dark">
+                            <label style="color:#e4e4e4;" for="newUsername">* Username:</label>
+                            <input required="required" type="text" class="form-control" id="newUsername"
+                                   placeholder="Enter your username here"/>
+                        </div>
+
+                        <div class="form-group bg-dark">
+                            <label style="color:#e4e4e4;" for="email">* Email address:</label>
+                            <input required="required" type="email" class="form-control" id="email"
+                                   placeholder="Enter your email here"/>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create new account</button>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade container container-fluid" id="nav-log-in" role="tabpanel" aria-labelledby="nav-log-in-tab">
+                    <form>
+                        <div class="form-group bg-dark">
+                            <label style="color:#e4e4e4;" for="newUsername">* Username:</label>
+                            <input required="required" type="text" class="form-control" id="newUsername"
+                                   placeholder="Enter your username here"/>
+                        </div>
+
+                        <div class="form-group bg-dark">
+                            <label style="color:#e4e4e4;" for="email">* Email address:</label>
+                            <input required="required" type="email" class="form-control" id="email"
+                                   placeholder="Enter your email here"/>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create new account</button>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade" id="nav-forget-pass" role="tabpanel" aria-labelledby="nav-forget-pass-tab">
+                    <form>
+                        <div class="form-group bg-dark">
+                            <label style="color:#e4e4e4;" for="newUsername">* Username:</label>
+                            <input required="required" type="text" class="form-control" id="newUsername"
+                                   placeholder="Enter your username here"/>
+                        </div>
+
+                        <div class="form-group bg-dark">
+                            <label style="color:#e4e4e4;" for="email">* Email address:</label>
+                            <input required="required" type="email" class="form-control" id="email"
+                                   placeholder="Enter your email here"/>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create new account</button>
+                    </form>
+                </div>
+            </div>
+            <!--tab content panels end-->
+        </div>
+
+
+    </div>
+</div>
+
+<div th:replace="common/header :: body-bottom-scriipts"></div>
+</body>
+</html>
