@@ -5,14 +5,12 @@
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    /*color: #5a5a5a;*/
-    /*color: black;*/
     background-color: #111111;
-    /*background-repeat: repeat;*/
+    background-repeat: repeat;
     /*background-size: auto;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('/img/back/setka-big.png');
+    background-size: auto;
+    /*background-repeat: no-repeat;*/
+    background-image: url('/img/back/setka-texture-darkest.jpg');
 }
 
 .form-control {
@@ -30,7 +28,7 @@ body {
 hr {
     border: none;
     height: 1px;
-    color: #a0a0a0;
+    color: #dbdbdb;
     background-color: #606060;
 }
 

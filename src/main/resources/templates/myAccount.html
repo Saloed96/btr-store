@@ -9,13 +9,13 @@
 <div class="container" style="padding-top: 20px;">
     <div class="row">
         <div class="col-md-8" style="padding-top: 38px;">
-            <h2 class="section-headline" style="position:absolute; margin-top: 6px;"><span style="padding: 5px 22px;">User Account</span>
+            <h2 class="section-headline border border-light" style="position:absolute; margin-top: 6px;"><span style="padding: 5px 22px;">User Account</span>
             </h2>
             <hr class="container-fluid" style="position: absolute; height: 6px; background-color: #333;
              z-index: -1;"/>
         </div>
         <div class="col-md-4">
-            <img class="img-responsive img-fluid rounded-pill" src="/img/slide/bt985x290.gif" alt="BLACKTECH"/>
+            <img class="img-responsive img-fluid rounded-pill border border-light" src="/img/slide/bt985x290.gif" alt="BLACKTECH"/>
         </div>
     </div>
 <!--    <hr style="position: absolute; width: 100%; height: 6px; background-color: #333;-->
@@ -38,7 +38,7 @@
             <!--tabs end-->
             <!--tab content panels-->
             <div class="tab-content bg-dark  container container-fluid" style="padding: 20px 20px;" id="nav-tabContent">
-
+<!--tab 1 content -->
                 <div class="tab-pane fade show active" id="nav-new-account" role="tabpanel"
                      aria-labelledby="nav-new-account-tab">
                     <form>
@@ -57,40 +57,34 @@
                         <button type="submit" class="btn btn-primary">Create new account</button>
                     </form>
                 </div>
-
-                <div class="tab-pane fade container container-fluid" id="nav-log-in" role="tabpanel" aria-labelledby="nav-log-in-tab">
+<!--tab 2 content-->
+                <div class="tab-pane fade" id="nav-log-in" role="tabpanel" aria-labelledby="nav-log-in-tab">
                     <form>
                         <div class="form-group bg-dark">
-                            <label style="color:#e4e4e4;" for="newUsername">* Username:</label>
-                            <input required="required" type="text" class="form-control" id="newUsername"
+                            <label style="color:#e4e4e4;" for="username">* Username:</label>
+                            <input required="required" type="text" class="form-control" id="username"
                                    placeholder="Enter your username here"/>
                         </div>
 
                         <div class="form-group bg-dark">
-                            <label style="color:#e4e4e4;" for="email">* Email address:</label>
-                            <input required="required" type="email" class="form-control" id="email"
-                                   placeholder="Enter your email here"/>
+                            <label style="color:#e4e4e4;" for="password">* Password:</label>
+                            <input required="required" type="email" class="form-control" id="password"
+                                   placeholder="Enter your password here"/>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Create new account</button>
+                        <button type="submit" class="btn btn-primary">Log in</button>
                     </form>
                 </div>
-
+<!--tab 3 content-->
                 <div class="tab-pane fade" id="nav-forget-pass" role="tabpanel" aria-labelledby="nav-forget-pass-tab">
                     <form>
                         <div class="form-group bg-dark">
-                            <label style="color:#e4e4e4;" for="newUsername">* Username:</label>
-                            <input required="required" type="text" class="form-control" id="newUsername"
-                                   placeholder="Enter your username here"/>
-                        </div>
-
-                        <div class="form-group bg-dark">
-                            <label style="color:#e4e4e4;" for="email">* Email address:</label>
-                            <input required="required" type="email" class="form-control" id="email"
+                            <label style="color:#e4e4e4;" for="recoverEmail">* Email:</label>
+                            <input required="required" type="text" class="form-control" id="recoverEmail"
                                    placeholder="Enter your email here"/>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Create new account</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>
